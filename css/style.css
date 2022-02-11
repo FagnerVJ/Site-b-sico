@@ -99,4 +99,15 @@ body{
     .para-footer{
         width: auto;
     }
+    .secao-contato{
+        justify-content: space-between;
+        padding: 30px;
+        display: flex;
+    }
+    form{
+        width: 40%;
+    }
+    .img-contato{
+        
+    }
 
