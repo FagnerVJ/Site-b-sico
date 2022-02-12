@@ -31,6 +31,7 @@ body{
    }
    .titulo{
     font-weight: bold;
+    font-size: 40px;
    }
    .container-principal{
     width: auto;
@@ -107,7 +108,92 @@ body{
     form{
         width: 40%;
     }
-    .img-contato{
-        
+
+    /* Pagina Contato */
+    .conteudoPrincipal-cursos-link {
+        list-style: none;
+        height: 300px;
+        background-color: #FFF;
+        text-align: center;
+        margin: 1%;
+        transition: .3s;
+        box-shadow: 2px 2px 2px #CCC;
+        position: relative;
+
+    }
+    .conteudoPrincipal-cursos-link a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .conteudoPrincipal-cursos-link a:before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
     }
 
+    
+    
+    .conteudoPrincipal-cursos-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.conteudoPrincipal-cursos-link a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+    
+    .conteudoPrincipal-cursos{
+        display: flex;
+        flex-wrap: wrap;
+        }
+    .conteudoPrincipal-cursos-link{
+        width: 23%;
+        margin-bottom: 1%;
+        
+    }
+    .conteudoPrincipal-cursos-link:nth-child(4n){
+        margin-right: 0;
+    }
+    .conteudoPrincipal-cursos-link:nth-child(4n +1){
+        margin-left: 0;
+    }
+    
+    /* Css referente ao video e o conteudo principal */
+    .videoSobre .container{
+        display: flex;
+        align-items: center;
+    }
+    .videoSobre-sobre{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+    }
+    .videoSobre-sobre-list{
+        flex-grow: 1;
+        list-style: none;
+    }
+    .videoSobre-video{
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+    .imagem-lateral{
+        width: 400px;
+        margin-bottom: 30px;
+        margin-left: 90px;
+    }
+    iframe{
+        margin-bottom: 20px;
+    }
